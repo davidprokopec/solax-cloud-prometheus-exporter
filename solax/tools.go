@@ -4,7 +4,10 @@ import (
 	"net/url"
 )
 
-func UrlValid(apiAddr string) bool {
+func UrlValid(apiAddr string) (bool, error){
   _, err := url.Parse(apiAddr)
-  return err == nil
+  if(err != nil){
+    return false, err
+  }
+  return true, nil
 }
