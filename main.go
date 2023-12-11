@@ -99,6 +99,8 @@ func main() {
 			sleep = true
 			ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 
+      fmt.Printf("checking address %s...\n", apiAddr)
+
 			ok := solax.UrlValid(apiAddr)
 
 			if !ok {
