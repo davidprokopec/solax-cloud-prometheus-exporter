@@ -11,5 +11,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username ${{ github.repository_owner }} --password ${{ secrets.GH_ACCESS_TOKEN }} ghcr.io
-          docker build . --tag ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:latest
-          docker push ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:latest
+          docker build . --tag ghcr.io/${{ github.repository_owner }}/solax-cloud-prometheus-exporter:latest
+          docker push ghcr.io/${{ github.repository_owner }}/solax-cloud-prometheus-exporter:latest
