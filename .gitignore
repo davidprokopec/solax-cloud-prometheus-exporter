@@ -3,3 +3,5 @@
 /dist
 /vendor
 /cover.out
+
+solax-cloud-prometheus-exporter

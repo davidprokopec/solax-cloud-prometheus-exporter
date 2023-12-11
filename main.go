@@ -102,7 +102,7 @@ func main() {
 			ok := solax.UrlValid(apiAddr)
 
 			if !ok {
-				fmt.Printf("address %s is not locally reachable, skipping refresh...\n", apiAddr)
+				fmt.Printf("address %s is not locally reachableeeee, skipping refresh...\n", apiAddr)
 				continue
 			}
 
