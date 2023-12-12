@@ -49,6 +49,8 @@ metrics:
 Example docker-compose configuration
 
 ```docker-compose.yml
+version: '3.3'
+services:
   solaxcloud-exporter:
     container_name: monitoring-solaxcloud_exporter
     image: ghcr.io/davidprokopec/solax-cloud-prometheus-exporter
