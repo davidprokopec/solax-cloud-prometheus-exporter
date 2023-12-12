@@ -41,7 +41,7 @@ metrics:
     - name: default
       scrape_configs:
         - job_name: 'solaxcloud_exporter'
-          scrape_interval: 2s
+          scrape_interval: 120s
           static_configs:
             - targets: ['solaxcloud-exporter:8886']
 ```
