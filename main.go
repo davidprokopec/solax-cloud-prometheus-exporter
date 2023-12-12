@@ -94,7 +94,7 @@ func main() {
 		sleep := false
 		for {
 			if sleep {
-				time.Sleep(time.Second * 2)
+				time.Sleep(time.Second * 120)
 			}
 			sleep = true
 			ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
