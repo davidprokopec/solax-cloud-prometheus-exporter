@@ -1,6 +1,6 @@
 # solax-cloud-prometheus-exporer
 
-Prometheus exporter for Inverter data readouts from public solax cloud api. (currently only exports data i need, will maybe add support for selecting wanted data later)
+Prometheus exporter for inverter data readouts from public solax cloud api. (currently only exports data i need, will maybe add support for selecting wanted data later)
 
 ## Usage
 
