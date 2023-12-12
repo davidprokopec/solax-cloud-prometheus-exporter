@@ -19,7 +19,7 @@ var apiAddr string
 var debug bool
 
 var (
-	metricNamePrefix = "solaxrt_"
+	metricNamePrefix = "solaxcloud_"
 	registry         = prometheus.NewRegistry()
 )
 

@@ -10,6 +10,8 @@ go install github.com/davidprokopec/solax-cloud-prometheus-exporter@latest
 
 ## Usage
 
+Metrics prefix is `solaxcloud_`
+
 ### Run from shell
 
 If you downloaded the source code and built it, you can run it from shell:
