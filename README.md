@@ -20,7 +20,7 @@ go install github.com/davidprokopec/solax-cloud-prometheus-exporter@latest
 If you downloaded the source code and built it, you can run it from shell:
 
 ```shell
-solax-cloud-prometheus-exporter -address "<your_api_address>" -listen 0.0.0.0:8886
+./solax-cloud-prometheus-exporter -address "<your_api_address>" -listen 0.0.0.0:8886
 ```
 
 ### Run from docker
