@@ -25,11 +25,15 @@ solax-cloud-prometheus-exporter -address "<your_api_address>" -listen 0.0.0.0:88
 
 ### Run from docker
 
+The docker image is built for amd64 and arm64 platforms, since I myself use arm64 on my server.
+
 ```shell
 docker run ghcr.io/davidprokopec/solax-cloud-prometheus-exporter:latest -address "<your_api_address>"
 ```
 
 ### Deployment
+
+Configuration for scraping from Prometheus
 
 ```prometheus.yml
 metrics:
@@ -42,6 +46,18 @@ metrics:
             - targets: ['solaxcloud-exporter:8886']
 ```
 
+Example docker-compose configuration
+
+```docker-compose.yml
+  solaxcloud-exporter:
+    container_name: monitoring-solaxcloud_exporter
+    image: ghcr.io/davidprokopec/solax-cloud-prometheus-exporter
+    command:
+      - '-address=https://www.solaxcloud.com/proxyApp/proxy/api/getRealtimeInfo.do?tokenId=<your_token>&sn=<your_sn>'
+    restart: unless-stopped
+    networks:
+      - monitoring
+```
 
 ## Acknowledgement
 
