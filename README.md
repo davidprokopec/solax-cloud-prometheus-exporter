@@ -2,11 +2,6 @@
 
 Prometheus exporter for inverter data readouts from public solax cloud api. (currently only exports data i need, will maybe add support for selecting wanted data later)
 
-## Usage
-
-
-## Install
-
 Using Go 1.19 or newer
 
 ```shell
