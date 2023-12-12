@@ -35,7 +35,7 @@ docker run ghcr.io/davidprokopec/solax-cloud-prometheus-exporter:latest -address
 
 Configuration for scraping from Prometheus
 
-```prometheus.yml
+```yml
 metrics:
   configs:
     - name: default
@@ -48,7 +48,7 @@ metrics:
 
 Example docker-compose configuration
 
-```docker-compose.yml
+```yml
 version: '3.3'
 services:
   solaxcloud-exporter:
